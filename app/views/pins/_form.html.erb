@@ -1,0 +1,10 @@
+<%= simple_form_for(@pin, html: { class: "form-horizantal"}) do |f| %>
+  <%= f.error_notification %>
+
+    <%= f.input :description, as: :text, input_html: {rows: "4"} %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit, class: "btn btn-primary" %>
+  </div>
+<% end %>
