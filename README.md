@@ -1,6 +1,5 @@
-# One Month Rails 
+# Share the Stoke 
 
-This is a sample application for 
-[*One Month Rails*](onemonthrails.com)
+This is a pintrest like application for sharing media.
 
 by [Spencer Montgomery](smontgo5@gmail.com)
