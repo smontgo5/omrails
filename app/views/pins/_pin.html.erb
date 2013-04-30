@@ -1,12 +1,13 @@
-<div class="box">
+
+ <div class="box">
     <%= link_to (image_tag pin.image(:medium)), pin %>
     <p class="description">
         <%= pin.description %>
     </p>
     <p>
-        <strong>
-            Posted by <%= link_to pin.user.name, pin.user %>
-        </strong>
+        <b>
+            Posted by <%= link_to pin.user.name, pin.user.name %>
+        </b>
     </p>
     <% if current_user == pin.user %>
         <p>
@@ -14,4 +15,4 @@
           <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
         </p>
     <% end %>
-</div>
+</div> 

@@ -6,6 +6,8 @@ class PinsController < ApplicationController
   def index
     @pins = Pin.order("created_at desc")
 
+    #Pin.order("created_at desc")
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pins }

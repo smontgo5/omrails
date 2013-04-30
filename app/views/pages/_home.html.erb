@@ -1,16 +1,12 @@
-<% if user_signed_in? %>
- 	
-<%else%>
+<% unless user_signed_in? %>
+	<div class="hero-unit">
+		<h1>What gets you stoked?</h1>
 
-<div class="hero-unit">
-<h1>What gets you stoked?</h1>
-
-<p>
-	Share photos and videos from your outdoor adventures to increase the collective stoke!
-</p>
-<p>
-	<%= link_to "Make An Account!", new_user_registration_path, class: "btn btn-primary btn-large"%>
-
-</p>
-</div>
-<%end%>
+		<p>
+			Share photos and videos from your outdoor adventures to increase the collective stoke!
+		</p>
+		<p>
+			<%= link_to "Make An Account!", new_user_registration_path, class: "btn btn-primary btn-large"%>
+		</p>
+	</div>
+<% end %>
